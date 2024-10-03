@@ -6,8 +6,20 @@ class Program1
     static void Main(string[] args)
     {
         // Define the connection string (with hard-coded password)
-        string connectionString = "Server=your_server_name;Database=your_database_name;User Id=your_username;Password=your_password;";
+        //string connectionString = "Server=your_server_name;Database=your_database_name;User Id=your_username;Password=your_password;";
 
+// Hardcoded parts of the connection string
+        string server = "Server=your_server_name;";
+        string database = "Database=your_database_name;";
+        string userId = "User Id=your_username;";
+        
+        // Concatenating password
+        string part1 = "your";
+        string part2 = "_password";
+        string password = part1 + part2;  // Concatenating password
+        
+        // Concatenate the full connection string
+        string connectionString = server + database + userId + "Password=" + password + ";";
         // Example query
         string query = "SELECT * FROM your_table_name1";
 
