@@ -9,7 +9,7 @@ class Program1
         string connectionString = "Server=your_server_name;Database=your_database_name;User Id=your_username;Password=your_password;";
 
         // Example query
-        string query = "SELECT * FROM your_table_name";
+        string query = "SELECT * FROM your_table_name1";
 
         // Create a new connection
         using (SqlConnection connection = new SqlConnection(connectionString))
